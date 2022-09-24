@@ -1,0 +1,30 @@
+{
+  "name": "akuakultur_backend",
+  "version": "0.0.1",
+  "description": "akuakultur microservice app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "akuakultur",
+    "ocbcnisp",
+    "hack@on",
+    "GakPerluRibet",
+    "OnSpace"
+  ],
+  "author": "lintangwisesa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "cron-parser": "^4.6.0",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "node-cron": "^3.0.2",
+    "nodemailer": "^6.7.8",
+    "sequelize": "^6.23.1",
+    "simple-oauth2": "^4.3.0"
+  }
+}
