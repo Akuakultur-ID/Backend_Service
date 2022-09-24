@@ -18,6 +18,8 @@ let getTimeSign = async(httpMethod, relativeUrl, body) => {
         try {
             let RequestTimestamp = Date.now()
             let RequestBody = body == null ? "" : JSON.stringify(body)
+            RequestBody = RequestBody.replace(/\s+/g, '')
+
             let Data = crypto.createHash('sha256').update(RequestBody).digest('hex')
             Data = Data.toLowerCase()
         

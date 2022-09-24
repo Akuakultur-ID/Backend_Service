@@ -14,8 +14,12 @@ ocbc.use((req, res, next) => {
     next()
 })
 
+// ###################################
+// ON BOARDING PARAMETERS
+// ###################################
+
 // 1. list marriages
-ocbc.get('/marriages', (req, res) => {
+ocbc.get('/params/marriages', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/marriages"
     let url = ENV.OCBC_URL + path
@@ -51,7 +55,7 @@ ocbc.get('/marriages', (req, res) => {
 })
 
 // 2. list religions
-ocbc.get('/religions', (req, res) => {
+ocbc.get('/params/religions', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/religions"
     let url = ENV.OCBC_URL + path
@@ -87,7 +91,7 @@ ocbc.get('/religions', (req, res) => {
 })
 
 // 3. list educations
-ocbc.get('/educations', (req, res) => {
+ocbc.get('/params/educations', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/educations"
     let url = ENV.OCBC_URL + path
@@ -123,7 +127,7 @@ ocbc.get('/educations', (req, res) => {
 })
 
 // 4. list purpose
-ocbc.get('/purpose', (req, res) => {
+ocbc.get('/params/purpose', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/purpose"
     let url = ENV.OCBC_URL + path
@@ -159,7 +163,7 @@ ocbc.get('/purpose', (req, res) => {
 })
 
 // 5. list sourceOfFunds
-ocbc.get('/sourceOfFunds', (req, res) => {
+ocbc.get('/params/sourceOfFunds', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/sourceOfFunds"
     let url = ENV.OCBC_URL + path
@@ -195,7 +199,7 @@ ocbc.get('/sourceOfFunds', (req, res) => {
 })
 
 // 6. list monthlyIncomes
-ocbc.get('/monthlyIncomes', (req, res) => {
+ocbc.get('/params/monthlyIncomes', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/monthlyIncomes"
     let url = ENV.OCBC_URL + path
@@ -231,7 +235,7 @@ ocbc.get('/monthlyIncomes', (req, res) => {
 })
 
 // 7. monthlyTransactions
-ocbc.get('/monthlyTransactions', (req, res) => {
+ocbc.get('/params/monthlyTransactions', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/monthlyTransactions"
     let url = ENV.OCBC_URL + path
@@ -267,7 +271,7 @@ ocbc.get('/monthlyTransactions', (req, res) => {
 })
 
 // 8. relationship
-ocbc.get('/relationship', (req, res) => {
+ocbc.get('/params/relationship', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/relationship"
     let url = ENV.OCBC_URL + path
@@ -303,7 +307,7 @@ ocbc.get('/relationship', (req, res) => {
 })
 
 // 9. citizenship
-ocbc.get('/citizenship', (req, res) => {
+ocbc.get('/params/citizenship', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/citizenship"
     let url = ENV.OCBC_URL + path
@@ -339,7 +343,7 @@ ocbc.get('/citizenship', (req, res) => {
 })
 
 // 10. termsAndCondition
-ocbc.get('/termsAndCondition', (req, res) => {
+ocbc.get('/params/termsAndCondition', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/termsAndCondition"
     let url = ENV.OCBC_URL + path
@@ -375,7 +379,7 @@ ocbc.get('/termsAndCondition', (req, res) => {
 })
 
 // 11. countries
-ocbc.get('/countries', (req, res) => {
+ocbc.get('/params/countries', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/countries"
     let url = ENV.OCBC_URL + path
@@ -411,7 +415,7 @@ ocbc.get('/countries', (req, res) => {
 })
 
 // 12. POST provinces
-ocbc.get('/provinces', (req, res) => {
+ocbc.get('/params/provinces', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/provinces"
     let url = ENV.OCBC_URL + path
@@ -449,7 +453,7 @@ ocbc.get('/provinces', (req, res) => {
 })
 
 // 13. POST city
-ocbc.get('/city', (req, res) => {
+ocbc.get('/params/city', (req, res) => {
     // Path
     let provinceId = req.query.provinceId
     let path = "/hackathon/v1/onboarding/params/city"
@@ -488,7 +492,7 @@ ocbc.get('/city', (req, res) => {
 })
 
 // 14. POST District
-ocbc.get('/district', (req, res) => {
+ocbc.get('/params/district', (req, res) => {
     // Path
     let cityId = req.query.cityId
     let path = "/hackathon/v1/onboarding/params/district"
@@ -527,7 +531,7 @@ ocbc.get('/district', (req, res) => {
 })
 
 // 15. POST subdistrict
-ocbc.get('/subdistrict', (req, res) => {
+ocbc.get('/params/subdistrict', (req, res) => {
     // Path
     let districtId = req.query.districtId
     let path = "/hackathon/v1/onboarding/params/subdistrict"
@@ -566,7 +570,7 @@ ocbc.get('/subdistrict', (req, res) => {
 })
 
 // 16. POST zipCode
-ocbc.get('/zipCode', (req, res) => {
+ocbc.get('/params/zipCode', (req, res) => {
     // Path
     let subDistrictId = req.query.subDistrictId
     let path = "/hackathon/v1/onboarding/params/zipCode"
@@ -605,7 +609,7 @@ ocbc.get('/zipCode', (req, res) => {
 })
 
 // 17. occupation
-ocbc.get('/occupation', (req, res) => {
+ocbc.get('/params/occupation', (req, res) => {
     // Path
     let path = "/hackathon/v1/onboarding/params/occupation"
     let url = ENV.OCBC_URL + path
@@ -641,7 +645,7 @@ ocbc.get('/occupation', (req, res) => {
 })
 
 // 18. POST jobs
-ocbc.get('/jobs', (req, res) => {
+ocbc.get('/params/jobs', (req, res) => {
     // Path
     let occupationId = req.query.occupationId
     let path = "/hackathon/v1/onboarding/params/jobs"
@@ -669,6 +673,214 @@ ocbc.get('/jobs', (req, res) => {
             res.status(200).json(resp)
         })
         .catch((err) => {
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// ###################################
+// ON BOARDING
+// ################################### 
+
+// 1. onboarding apply
+ocbc.post('/onboarding/apply', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/onboarding/apply"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = {
+        nik: req.body.nik,
+        name: req.body.name,
+        email: req.body.email,
+        phone: req.body.phone,
+        mother_maiden_name: req.body.mother,
+        dob: req.body.dob,
+        gender: req.body.gender
+    }
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// 2. account apply
+ocbc.post('/onboarding/accountApply', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/onboarding/accountApply"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = {
+        "accountVerification": {
+            "birth_place": req.body.birth_place,
+            "marriage": req.body.marriage,
+            "religion": req.body.religion,
+            "education": req.body.education
+         },
+         "KtpAddress": {
+            "city": req.body.city,
+            "district_code": req.body.district_code,
+            "sub_district_code": req.body.sub_district_code,
+            "street_address": req.body.street_address,
+            "zip_code": req.body.zip_code,
+            "rt": req.body.rt,
+            "rw": req.body.rw
+         }
+    }
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// 3. work data apply
+ocbc.post('/onboarding/workDataApply', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/onboarding/workDataApply"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = {
+        "currentEmployee": {
+            "work_occupation_id": req.body.work_occupation_id,
+            "work_position_id": req.body.work_position_id,
+            "work_industry_id": req.body.work_industry_id,
+            "work_company_name": req.body.work_company_name,
+            "work_started_at": req.body.work_started_at
+        },
+        "workAddress": {
+            "zip_code": req.body.zip_code,
+            "city": req.body.city,
+            "district_code": req.body.district_code,
+            "sub_district_code": req.body.sub_district_code,
+            "street_address": req.body.street_address,
+            "rt": req.body.rt,
+            "rw": req.body.rw
+        },
+        "purpose": {
+            "purpose": req.body.purpose,
+            "fund_source": req.body.fund_source,
+            "monthly_income": req.body.monthly_income,
+            "monthly_transaction": req.body.monthly_transaction
+        },  
+        "card_delivery": req.body.card_delivery
+    }       
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            console.log(err)
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// 4. TnC Apply
+ocbc.post('/onboarding/TNCApply', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/onboarding/TNCApply"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = req.body.confirm == true ? {
+            "title": [
+                "T&C Umum",
+                "T&C Layanan E-Banking",
+                "T&C One Wallet",
+                "T&C Tanda Link"
+            ]
+        } : {"title": []}
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            console.log(err)
             let resp = httpRes(400, 'Bad request', err)
             res.status(400).json(resp)
         })
