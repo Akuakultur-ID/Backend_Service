@@ -1,0 +1,853 @@
+{
+	"info": {
+		"_postman_id": "19462d5f-495d-4837-8445-3c39c7fd4418",
+		"name": "OCBC Hack@On 2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13476918"
+	},
+	"item": [
+		{
+			"name": "OCBC Onboarding Params",
+			"item": [
+				{
+					"name": "Akuakultur OCBC Marriage List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/marriages",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"marriages"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC Religion List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/religions",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"religions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC Education List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/educations",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"educations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC Purpose List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/purpose",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"purpose"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC sourceOfFunds List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/sourceOfFunds",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"sourceOfFunds"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC monthlyIncomes List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/monthlyIncomes",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"monthlyIncomes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC monthlyTransactions List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/monthlyTransactions",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"monthlyTransactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC relationship List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/relationship",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"relationship"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC citizenship List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/citizenship",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"citizenship"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC TnC List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/termsAndCondition",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"termsAndCondition"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC countries List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/countries",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"countries"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC provinces List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/provinces",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"provinces"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC city List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/city?provinceId=1",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"city"
+							],
+							"query": [
+								{
+									"key": "provinceId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC district List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/district?cityId=2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"district"
+							],
+							"query": [
+								{
+									"key": "cityId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC subdistrict List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/subdistrict?districtId=15",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"subdistrict"
+							],
+							"query": [
+								{
+									"key": "districtId",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC zipcode List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/zipCode?subDistrictId=2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"zipCode"
+							],
+							"query": [
+								{
+									"key": "subDistrictId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC occupation List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/occupation",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"occupation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Akuakultur OCBC jobs List",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/ocbc/params/jobs?occupationId=2",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"params",
+								"jobs"
+							],
+							"query": [
+								{
+									"key": "occupationId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OCBC Onboarding Apply",
+			"item": [
+				{
+					"name": "Onboarding New Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nik\": \"1029837465999999\",\r\n    \"name\": \"ADMIN AKUAKULTUR\",\r\n    \"email\": \"admin@akuakultur.id\",\r\n    \"phone\": \"08781267322\",\r\n    \"mother\": \"IBU MIMIN\",\r\n    \"dob\": \"2000-12-20\",\r\n    \"gender\": \"MALE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/onboarding/apply",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"onboarding",
+								"apply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding Verify Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"birth_place\": \"BANDUNG\",\r\n    \"marriage\": \"SINGLE\",\r\n    \"religion\": \"KAT\",\r\n    \"education\": \"E\",\r\n    \"city\": \"Jakarta Timur, Wil. Kota\",\r\n    \"district_code\": \"KALI DERES\",\r\n    \"sub_district_code\": \"PEGADUNGAN\",\r\n    \"street_address\": \"JL TARUNA JAYA GG.SWADAYA II\",\r\n    \"zip_code\": \"81161\",\r\n    \"rt\": \"002\",\r\n    \"rw\": \"001\",\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/onboarding/accountApply",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"onboarding",
+								"accountApply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding Work Data Apply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"work_occupation_id\": 1,\r\n    \"work_position_id\": 29,\r\n    \"work_industry_id\": 4,\r\n    \"work_company_name\": \"Xsis Mitra Utama\",\r\n    \"work_started_at\": \"2015-03-01\",\r\n    \"zip_code\": 15314,\r\n    \"city\": \"Tangerang, Kab.\",\r\n    \"district_code\": \"BUMI SERPONG DAMAI\",\r\n    \"sub_district_code\": \"SETU\",\r\n    \"street_address\": \"Delatinos R122 no 10\",\r\n    \"rt\": \"001\",\r\n    \"rw\": \"001\",\r\n    \"purpose\": \"A\",\r\n    \"fund_source\": \"A\",\r\n    \"monthly_income\": \"100000000\",\r\n    \"monthly_transaction\": \"A\",\r\n    \"card_delivery\": \"AT_BRANCH\",\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/onboarding/workDataApply",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"onboarding",
+								"workDataApply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding TnC Apply",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\": true,\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/onboarding/TNCApply",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"onboarding",
+								"TNCApply"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding Check Account Balance",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/checkAccount/balance",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"checkAccount",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding Transfer Inquiry",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"10024151016420220924075811\",\r\n    \"transferAmount\": 125000,\r\n    \"paymentDetail\": \"ok\",\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/transfer/inquiry",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"transfer",
+								"inquiry"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Onboarding Transfer Submit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountNumber\": \"10024151016420220924075811\",\r\n    \"transferAmount\": 125000,\r\n    \"paymentDetail\": \"ok\",\r\n    \"onboarding_token\": \"803dee2b-46ee-4093-b227-d10af59e66ae\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/ocbc/transfer/submit",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"ocbc",
+								"transfer",
+								"submit"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/user",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup Add new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fname\": \"Yana\",\r\n    \"lname\": \"Bantal\",\r\n    \"email\": \"yana@bantal.id\",\r\n    \"password\": \"12345\",\r\n    \"retypePass\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/user/signup",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"user",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login find one user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"yana@bantal.id\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/user/login",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update profile",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"12345\",\r\n    \"nik\": \"3838383838383838\",\r\n    \"name\": \"PARTNER APP\",\r\n    \"email\": \"admin@partner.id\",\r\n    \"phone\": \"089090896745\",\r\n    \"mother\": \"IBU PARTNER\",\r\n    \"dob\": \"2000-12-20\",\r\n    \"gender\": \"MALE\",\r\n    \"birthPlace\" : \"BANDUNG\",\r\n    \"marriage\" : \"SINGLE\",\r\n    \"religion\" : \"KAT\",\r\n    \"education\" : \"E\",\r\n    \"province\" : \"BALI\",\r\n    \"city\" : \"Jakarta Timur, Wil. Kota\",\r\n    \"district\" : \"KALI DERES\",\r\n    \"subDistrict\" : \"PEGADUNGAN\",\r\n    \"street\" : \"JL TARUNA JAYA GG.SWADAYA II\",\r\n    \"zipCode\" : \"81161\",\r\n    \"rt\" : \"096\",\r\n    \"rw\" : \"13\",\r\n    \"occupation\" : \"1\",\r\n    \"position\" : \"29\",\r\n    \"industry\" : \"4\",\r\n    \"companyName\" : \"PT. Satu Dua Tiga\",\r\n    \"startedAt\" : \"2000-01-01\",\r\n    \"comProvince\" : \"BALI\",\r\n    \"comCity\" : \"Denpasar, Kota.\",\r\n    \"comDistrict\" : \"DENPASAR UTARA\",\r\n    \"comSubDistrict\" : \"PEGUYANGAN\",\r\n    \"comStreet\" : \"Jl. Jalan ke Sukamakmur\",\r\n    \"comZipCode\" : \"41838\",\r\n    \"comRt\" : \"212\",\r\n    \"comRw\" : \"008\",\r\n    \"purpose\" : \"A\",\r\n    \"fundSource\" : \"A\",\r\n    \"mIncome\" : \"100000000\",\r\n    \"mTrx\" : \"A\",\r\n    \"cardDelivery\" : \"AT_BRANCH\",\r\n    \"onBoardingToken\" : \"048b2714-1eab-478f-b952-f19c73a626d3\",\r\n    \"accountNumber\": \"10018036937720220925045637\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local}}/user/edit_profile",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"user",
+								"edit_profile"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Add product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/product/add",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/product/add",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"product",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/product/add_cart",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"product",
+								"add_cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get cart",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{local}}/product/cart",
+							"host": [
+								"{{local}}"
+							],
+							"path": [
+								"product",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Akuakultur Home Signature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{local}}",
+					"host": [
+						"{{local}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OCBC Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic MjA5YjkzOWEtMDIyZi00NTZhLTliOTMtOWEwMjJmNTU2YTZjOmUzYjEyMGE3LTMyNTktNGRkZS1iMTIwLWE3MzI1OWFkZGU3ZQ==",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{URL}}/oauth/token",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL",
+			"value": "https://developer.ocbcnisp.com/sandbox",
+			"type": "string"
+		},
+		{
+			"key": "local",
+			"value": "http://localhost:2022",
+			"type": "string"
+		}
+	]
+}
