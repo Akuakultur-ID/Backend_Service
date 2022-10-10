@@ -10,7 +10,9 @@ const { httpRes } = require('./utils/response')
 
 // routes source
 const app = express()
-const ocbc = require('./routes/ocbc_params')
+const ocbc = require('./routes/ocbc')
+const users = require('./routes/users')
+const products = require('./routes/products')
 
 // middlewares
 app.use(express.json())
@@ -39,6 +41,8 @@ app.get('/', (req, res) => {
 
 // routes endpoint
 app.use('/ocbc', ocbc)
+app.use('/user', users)
+app.use('/product', products)
 
 // error handler
 app.use((req, res, next) => {

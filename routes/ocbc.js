@@ -891,4 +891,126 @@ ocbc.post('/onboarding/TNCApply', (req, res) => {
     })
 })
 
+// 5. Check Account
+ocbc.post('/checkAccount/balance', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/checkAccount/balance"
+    let url = ENV.OCBC_URL + path
+    let body = null
+    // token, signature & timestamp
+    getTimeSign("GET", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .get(url, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            console.log(err)
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        console.log(err)
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// 6. Transfer Inquiry 
+ocbc.post('/transfer/inquiry', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/transfer/inquiry"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = {
+        "accountNumber": req.body.accountNumber,
+        "transferAmount": req.body.transferAmount,
+        "paymentDetail": req.body.paymentDetail
+    }
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            console.log(err)
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
+// 7. Transfer submit
+ocbc.post('/transfer/submit', (req, res) => {
+    // Path
+    let path = "/hackathon/v1/transfer/submit"
+    let url = ENV.OCBC_URL + path
+    // token, signature & timestamp
+    let body = {
+        "transactionUUID": req.body.uuid,
+        "password": req.body.pass
+    }
+    getTimeSign("POST", path, body)
+    .then((timesign) => {
+        // headers
+        let config = {
+            headers: {
+            Authorization: `Bearer ${timesign.token}`,
+            ContentType: "application/json",
+            "X-OCBC-APIKey": ENV.OCBC_APIKEY,
+            "X-OCBC-Signature": timesign.signature,
+            "X-OCBC-Timestamp": timesign.timestamp,
+            "X-OCBC-ONBOARDING-TOKEN": req.body.onboarding_token
+            }
+        }
+        axios
+        .post(url, body, config)
+        .then((data) => {
+            let resp = httpRes(res.statusCode, 'Success', data.data)
+            res.status(200).json(resp)
+        })
+        .catch((err) => {
+            console.log(err)
+            let resp = httpRes(400, 'Bad request', err)
+            res.status(400).json(resp)
+        })
+    })
+    .catch((err) => {
+        let resp = httpRes(400, 'Bad request', err)
+        res.status(400).json(resp)
+    })
+})
+
 module.exports = ocbc
